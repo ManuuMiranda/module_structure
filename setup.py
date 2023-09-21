@@ -10,7 +10,7 @@ setup(
     version=VERSION,
     description='Machine Learning Classes UFV',
     author=AUTHOR,
-    author_email='9001137@alumnos.ufv.es.com',
+    author_email='9001137@alumnos.ufv.es',
     license='MIT',
     python_requires='>=3.11',
     packages=find_packages(),
