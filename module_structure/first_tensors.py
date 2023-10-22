@@ -117,3 +117,29 @@ a = torch.tensor([[3, 4], [3, 4]])
 b = torch.tensor([1, 2])
 
 torch.matmul(a, b)
+
+
+# GPU vs CPU
+
+torch.cuda.device_count()
+cuda = torch.device('cuda') # Default CUDA device
+cuda0 = torch.device('cuda:0')
+cuda2 = torch.device('cuda:2')
+
+
+x = torch.tensor([1., 2.], device=cuda0)
+print(f'x: {x}')
+# x.device is device(type='cuda', index=0)
+
+
+
+with torch.cuda.device(0):
+    # allocates a tensor on GPU 0
+    a = torch.tensor([1, 2], device=cuda)
+    print(f'a:{a}')
+
+
+
+points_gpu = torch.tensor([[4.0,1.0], [5.0,3.0], [2.0,1.0]], device=cuda)
+points_gpu = 2 * points_gpu
+print(points_gpu)
