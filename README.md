@@ -12,25 +12,28 @@ Examples
 Installation
 To use the TensorCalculator class, you'll need to have PyTorch installed. You can install PyTorch using pip:
 
-bash
-Copy code
+
+ ```sh
 pip install torch
+```
 After installing PyTorch, you can use the TensorCalculator class by importing it into your Python script or Jupyter Notebook.
 
-python
-Copy code
+ ```sh
 from tensor_calculator import TensorCalculator
-Usage
+```
+
+# Usage
 The TensorCalculator class is designed for working with PyTorch tensors. It provides several static methods for performing common tensor operations. Here's how to use it:
 
-python
-Copy code
+ ```sh
 # Example: Create tensors filled with zeros
 zeros_tensor = TensorCalculator.tensor_zeros(2, 3, 4)
 
 # Example: Calculate the sum of two tensors
 tensor_sum = TensorCalculator.tensor_sum(tensor1, tensor2)
-Methods
+```
+
+# Methods
 The TensorCalculator class includes the following static methods:
 
 tensor_zeros(dim_x, dim_y, dim_z): Creates a tensor filled with zeros of the specified dimensions.
