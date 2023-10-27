@@ -1,7 +1,7 @@
 # module_structure
 Machine Learning Classes UFV
 
-Tensor Calculator
+# Tensor Calculator
 This project provides a Python class called TensorCalculator that allows you to perform various operations on PyTorch tensors, such as creating tensors filled with zeros or ones, generating random tensors, calculating the sum, difference, element-wise multiplication, mean, standard deviation, minimum, and maximum values of tensors. It also includes example usages of the class methods.
 
 Table of Contents
